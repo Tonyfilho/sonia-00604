@@ -1,0 +1,49 @@
+/* Responsivo e usando variáveis do style.css */
+.uc-detail-container {
+  padding: 16px;
+  background: var(--background-color-sections);
+  color: var(--text-color);
+  font-family: var(--main-font-family);
+ max-width: 1100px;
+}
+
+.uc-header {
+  background: var(--primary-color);
+  padding: 12px;
+  border-radius: var(--border-radius);
+  color: var(--text-color-light);
+  text-align: center;
+}
+
+.uc-title {
+  margin: 0;
+  font-size: 1.8rem;
+}
+
+.uc-code {
+  font-size: 1rem;
+  margin-top: 4px;
+}
+
+.uc-overview, .uc-objectives, .uc-contents {
+  margin-top: 20px;
+}
+
+.uc-objectives h2, .uc-contents h2 {
+  margin-bottom: 8px;
+  color: var(--secondary-color);
+}
+
+.uc-objectives li, .uc-contents li {
+  margin: 6px 0;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .uc-title {
+    font-size: 1.6rem;
+  }
+  .uc-detail-container {
+    padding: 12px;
+  }
+}

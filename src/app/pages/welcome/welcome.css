@@ -1,0 +1,102 @@
+.welcome-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  
+  width: 1200px;
+  
+}
+
+.content {
+  background: var(--background-color-sections);
+  padding: 50px 60px;
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow);
+  text-align: center;
+  /* max-width: 450px; */
+  width: 100%;
+}
+
+.icon-box {
+  font-size: 60px;
+  color: var(--primary-color);
+  margin-bottom: 15px;
+}
+
+h2 {
+  margin-bottom: 10px;
+  font-size: 2rem;
+  color: var(--text-color);
+}
+
+p {
+  color: #444;
+  margin-bottom: 25px;
+}
+
+.btn-acessar {
+  display: inline-block;
+  padding: 12px 25px;
+  background: var(--primary-color);
+  border-radius: var(--border-radius);
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+  transition: var(--transition);
+}
+
+.btn-acessar:hover {
+  background: var(--text-hover);
+  transform: scale(1.07);
+}
+
+
+
+/**responsivo*/
+/* ---------- RESPONSIVIDADE ---------- */
+
+/* Telas médias e pequenas */
+@media (max-width: 768px) {
+  .content {
+    width: 90%;
+    padding: 40px;
+  }
+
+  .icon-box {
+    font-size: 50px;
+  }
+
+  h2 {
+    font-size: 1.7rem;
+  }
+
+  .btn-acessar {
+    width: 100%;
+    font-size: 1rem;
+  }
+}
+
+/* Telas muito pequenas (celulares pequenos) */
+@media (max-width: 480px) {
+  .content {
+    padding: 30px 20px;
+  }
+
+  .icon-box {
+    font-size: 40px;
+  }
+
+  h2 {
+    font-size: 1.4rem;
+  }
+
+  p {
+    font-size: 0.9rem;
+  }
+
+  .btn-acessar {
+    padding: 10px;
+    border-radius: 8px;
+  }
+}
